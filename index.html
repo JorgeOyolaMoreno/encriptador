@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <img src="Logo.png" alt="logo-alura">
+        <h1>Encriptador</h1>
+    </header>
+
+    
+    <div class="container">
+        <div class="izquierda">
+            <textarea id="input" cols="70" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="aviso">Solo letras minusculas y sin acentos</div>
+            
+            <button id="encriptar" onclick="encriptar()">Encriptar</button>
+            <button id="desencriptar" onclick="desencriptar()" href="">desencriptar</button>
+    
+    
+        </div>
+        <div class="imagen"><img src="imagen.png" alt="imagen" id="imagen"></div>
+        
+    
+        <div class="derecha">
+            <textarea id="output" cols="70" rows="10" ></textarea>
+    
+            <button id="copiar" onclick="copiar()">Copiar</button>
+           
+        </div>
+    
+        
+    </div>
+    
+
+    <footer>
+        <p>
+            Encriptador hecho por Jorge Mario Oyola Moreno. &copy; 
+        </p>
+        <a href="https://www.linkedin.com/in/jorge-moreno-663206271/" target="blank">Linkedin </a>
+        <p>
+            Mayo 2023 
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>

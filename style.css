@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body {
+   
+    background-image: url(fondo.png);
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+
+header{
+    padding:15px;
+    display:flex;
+    margin-bottom:1.3em;
+    background:  #74dfff;
+    width:100%;
+}
+
+header img {
+    width:5%;
+    height: 5%;
+}
+
+h1{
+    margin:auto;
+   
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+textarea::placeholder {
+  color: #2fb606;
+  font-style: italic;
+  text-align: center;
+  font-size:1.5em;
+}
+
+.aviso{
+    font-size:0.7em;
+    color:#b10061;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#imagen{
+    
+    margin:0 auto;
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
+}
+
+
+
+footer{
+    padding:10px;
+    display:flex;
+    margin-top:4em;
+    background: #74dfff;
+    font-size: 0.8em;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    bottom:0;
+
+}
+   
+#input, #output{
+    font-size:1.3em;
+    color: #1b1919;
+    padding: 10px;
+    resize: none;
+    margin:10px;
+    border:none;
+    background: #f1e3e3;
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
+    
+}
+
+#encriptar, #desencriptar, #copiar{
+
+    border: none;
+    border-radius: 10px;;
+    color: rgb(0, 255, 64);
+    background: rgb(255, 0, 191);
+    padding:12px;
+    margin: 30px 20px;
+    cursor:pointer;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.3);
+    font-size: 1.3em;
+    text-transform:capitalize
+}
+#encriptar:hover, #desencriptar:hover, #copiar:hover{
+
+    border: 1px solid #ccc;
+    border-radius: 10px;;
+    color: rgb(255, 0, 191);
+    background: rgb(0, 255, 64);
+    padding:10px;
+    margin: 30px 20px;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition:1s;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.7);
+}
+
+
+
+/* Reglas de estilo para pantallas pequeñas */
+
+
+@media screen and (max-width: 575.98px) {
+    header{
+        background: none;
+    }
+
+    .container{
+        width:90%;
+        margin:auto;
+        
+        flex-wrap: wrap;        
+       
+    }
+
+    .izquierda, .derecha{
+        height: 30%;
+        width:90%;
+    }
+
+    .imagen{
+        display:none;
+    }
+
+    .output{
+        display: block;
+    }
+
+    footer{
+        100%;
+        margin:auto;
+    }
+  }
+  
